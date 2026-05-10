@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muktijuddho Memory Archive | Bangladesh 1971 Digital Collection</title>
+  <meta name="description" content="Muktijuddho Memory Archive preserves documents, interviews, photographs, and public memories from the Bangladesh Liberation War of 1971.">
+  <meta name="keywords" content="Muktijuddho Memory Archive, Bangladesh Liberation War, 1971, historical documents, interviews, photographs, Bangladesh history">
+  <meta name="author" content="Muktijuddho Memory Archive">
+  <meta property="og:title" content="Muktijuddho Memory Archive">
+  <meta property="og:description" content="A digital archive for documents, interviews, photographs, and public contributions related to the Bangladesh Liberation War.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ArchiveOrganization",
+      "name": "Muktijuddho Memory Archive",
+      "description": "A public digital archive preserving documents, interviews, photographs, and memories from the Bangladesh Liberation War.",
+      "areaServed": "Bangladesh",
+      "foundingDate": "2026",
+      "email": "archive@muktijuddhomemory.example",
+      "url": "https://example.com/"
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Muktijuddho Memory Archive home">
+        <span class="brand-mark">71</span>
+        <span>Muktijuddho Memory Archive</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav id="siteNav" class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#documents">Documents</a>
+        <a href="#interviews">Interviews</a>
+        <a href="#photographs">Photographs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="section-kicker">Bangladesh Liberation War, 1971</p>
+          <h1>Muktijuddho Memory Archive</h1>
+          <p>
+            A simple online archive dedicated to preserving documents, interviews, photographs, and memories
+            connected with the Liberation War of Bangladesh. The archive supports students, researchers,
+            families, and citizens who want to study the struggle for independence.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#documents">Explore Archive</a>
+            <a class="button secondary" href="#contact">Contribute Material</a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80" alt="River landscape representing Bangladesh">
+          <figcaption>Preserving national memory, testimony, and public records.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Archive summary">
+      <div class="container stats-grid">
+        <div><strong>48</strong><span>Documents</span></div>
+        <div><strong>16</strong><span>Interviews</span></div>
+        <div><strong>72</strong><span>Photographs</span></div>
+        <div><strong>1971</strong><span>Historical Focus</span></div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-heading">
+        <p class="section-kicker">Featured collections</p>
+        <h2>Important archive areas</h2>
+        <p>Quick access to the main materials required for historical study and public remembrance.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="card feature-card">
+          <span class="card-tag">Documents</span>
+          <h3>Declarations and official records</h3>
+          <p>Browse selected declarations, letters, treaties, reports, and official correspondence from 1971.</p>
+          <a href="#documents">View documents</a>
+        </article>
+        <article class="card feature-card">
+          <span class="card-tag">Interviews</span>
+          <h3>Oral histories and testimony</h3>
+          <p>Listen to stories from freedom fighters, witnesses, organizers, and affected families.</p>
+          <a href="#interviews">Hear interviews</a>
+        </article>
+        <article class="card feature-card">
+          <span class="card-tag">Photographs</span>
+          <h3>People, places, and memory</h3>
+          <p>Study curated photographs with category filters, zoom preview, and download links.</p>
+          <a href="#photographs">Open gallery</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="documents" class="section muted-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Historical documents</p>
+          <h2>Document catalog</h2>
+          <p>Filter by type to review sample archive records with date, description, and source information.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Document filters">
+          <button class="filter-button active" type="button" data-document-filter="all">All</button>
+          <button class="filter-button" type="button" data-document-filter="Declaration">Declaration</button>
+          <button class="filter-button" type="button" data-document-filter="Correspondence">Correspondence</button>
+          <button class="filter-button" type="button" data-document-filter="Report">Report</button>
+          <button class="filter-button" type="button" data-document-filter="Treaty">Treaty</button>
+        </div>
+        <div id="documentList" class="archive-grid"></div>
+        <article id="documentDetail" class="detail-panel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="interviews" class="container section">
+      <div class="section-heading">
+        <p class="section-kicker">Recorded memories</p>
+        <h2>Interviews collection</h2>
+        <p>Each interview record includes biographical notes, testimony summary, and a direct media player.</p>
+      </div>
+      <div id="interviewList" class="interview-grid"></div>
+    </section>
+
+    <section id="photographs" class="section muted-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Visual archive</p>
+          <h2>Photographs gallery</h2>
+          <p>Browse photographs by events, locations, and themes. Select an image to view, zoom, and download.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Photo filters">
+          <button class="filter-button active" type="button" data-photo-filter="all">All</button>
+          <button class="filter-button" type="button" data-photo-filter="Events">Events</button>
+          <button class="filter-button" type="button" data-photo-filter="Locations">Locations</button>
+          <button class="filter-button" type="button" data-photo-filter="Themes">Themes</button>
+        </div>
+        <div id="photoGallery" class="photo-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <div class="section-heading">
+        <p class="section-kicker">Contribute or contact</p>
+        <h2>Contact the archive</h2>
+        <p>Use the form to send questions, feedback, or details about documents and photographs you want to contribute.</p>
+      </div>
+      <div class="contact-grid">
+        <aside class="card contact-card">
+          <h3>Archive office</h3>
+          <p><strong>Email:</strong> archive@muktijuddhomemory.example</p>
+          <p><strong>Phone:</strong> +880 2 0000 1971</p>
+          <p><strong>Address:</strong> Muktijuddho Memory Archive Desk, Dhaka, Bangladesh</p>
+          <p><strong>Hours:</strong> Sunday to Thursday, 9:00 AM to 5:00 PM</p>
+        </aside>
+        <form class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <label>
+            Upload document or photograph
+            <input type="file" name="attachment" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.webp">
+          </label>
+          <button class="button primary" type="submit">Submit Message</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="photoModal" class="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-label="Photograph preview">
+      <div class="modal-toolbar">
+        <button id="zoomOut" type="button">Zoom Out</button>
+        <button id="zoomIn" type="button">Zoom In</button>
+        <button id="zoomReset" type="button">Reset</button>
+        <a id="modalDownload" class="button secondary" href="#" download>Download</a>
+        <button class="modal-close" type="button" aria-label="Close image preview">Close</button>
+      </div>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2026 Muktijuddho Memory Archive. Static website ready for local or Netlify deployment.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
